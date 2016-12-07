@@ -575,9 +575,9 @@
 }
 
 .avatar-frame, .avatar-frame img {
-  width: 100px;
-  height: 100px;
-  -webkit-border-radius: 50px;  /* Saf3+, Chrome */
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;  /* Saf3+, Chrome */
   border-radius: 50px;          /* Opera 10.5, IE 9 */
-  /*-moz-border-radius: 50px;  Disabled for FF1+ */
+  /*-moz-border-radius: 100px;  Disabled for FF1+ */
 }
