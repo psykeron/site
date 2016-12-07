@@ -537,3 +537,47 @@
     padding-right: 1em;
   }
 }
+
+/**
+ * Archives Page
+ * Should be layout, but more elements added
+ */
+.archives {
+
+  &__header {
+    @extend %letter-spacing;
+
+    padding: 1em;
+
+    text-align: center;
+
+    span {
+      border-bottom: 3px solid $color-alpha;
+    }
+  }
+
+  &__container {
+    @include flex-grid(1, 2, 3, $xxl: 4, $pad: 0.25em);
+
+    max-width: $mq-xl;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+/**
+ * Avatar
+ */
+
+.avatar-frame {
+  border: 2px solid #c7b89e;
+}
+
+.avatar-frame, .avatar-frame img {
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;  /* Saf3+, Chrome */
+  border-radius: 50px;          /* Opera 10.5, IE 9 */
+  /*-moz-border-radius: 50px;  Disabled for FF1+ */
+}
