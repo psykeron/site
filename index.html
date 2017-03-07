@@ -1,10 +1,14 @@
 ---
 layout: default
-title: "The high quality, completely customizable, performant and 100% free blog template for Jekyll"
-description: "Chalk uses all the best tools and merges them into one premium blogging theme."
+title: "Simple, elegant cloud-works"
+description: "roci/works is a boutique cloud-solutions shop. We help you design, and implement solutions to make application deployments a joy."
 ---
 
-<ul class="article-list">
+
+<!-- <h1>Blog Posts</h1>
+<hr/>
+ -->
+ <ul class="article-list">
   {% for post in paginator.posts %}
     <li class="article-list-item reveal">
       <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
@@ -13,6 +17,9 @@ description: "Chalk uses all the best tools and merges them into one premium blo
           <span class="icon icon-ios-arrow-thin-right"></span>
         </h5>
       </a>
+      <div class="header-image">
+        <img src="https://unsplash.it/800/5?blur&&image={{ post.unsplash }}" />
+      </div>
       <p>{{ post.description }}</p>
       <div class="article-list-footer">
         <span class="article-list-date">

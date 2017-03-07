@@ -6,6 +6,9 @@ layout: default
   <ul class="article-list">
     {% for post in site.tags[page.slug] %}
       <li class="article-list-item reveal">
+        <div class="header-image">
+          <img src="https://unsplash.it/800/150?image={{ post.unsplash }}" />
+        </div>
         <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
           <h5>{{ post.title }}</h5>
         </a>
